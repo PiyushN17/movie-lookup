@@ -20,7 +20,6 @@ let container = document.getElementById('container');
 
 btn.addEventListener('click', function() {
     if(input.value !== '') {
-        reset.disabled = false;
         title.innerText = `Title: `;
         year.innerText = `Year: `;
         type.innerText = `Type: `;
@@ -47,6 +46,7 @@ btn.addEventListener('click', function() {
         .then((value) => {
             if(value.Response === 'True') {
                 container.hidden = false;
+                reset.disabled = false;
                 title.innerText += ` ${value.Title}`;
                 year.innerText += ` ${value.Year}`;
                 type.innerText += ` ${value.Type}`;
