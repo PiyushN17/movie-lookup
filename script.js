@@ -23,7 +23,7 @@ btn.addEventListener('click', function() {
         title.innerText = `Title: `;
         year.innerText = `Year: `;
         type.innerText = `Type: `;
-        rating.innerText = `Rating: `;
+        rating.innerText = `IMDB Rating: `;
         ageRate.innerText = `Age Rating: `;
         relDate.innerText = `Release Date: `;
         runTime.innerText = `Runtime: `;
@@ -85,7 +85,7 @@ reset.addEventListener('click', function() {
     title.innerText = `Title: `;
     year.innerText = `Year: `;
     type.innerText = `Type: `;
-    rating.innerText = `Rating: `;
+    rating.innerText = `IMDB Rating: `;
     ageRate.innerText = `Age Rating: `;
     relDate.innerText = `Release Date: `;
     runTime.innerText = `Runtime: `;
@@ -98,3 +98,4 @@ reset.addEventListener('click', function() {
     plot.innerText = `Plot: `;
 
 })
+
