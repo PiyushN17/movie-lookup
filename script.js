@@ -23,7 +23,7 @@ btn.addEventListener('click', function() {
         title.innerText = `Title: `;
         year.innerText = `Year: `;
         type.innerText = `Type: `;
-        genre.innerText += `Genre: `;
+        genre.innerText = `Genre: `;
         rating.innerText = `Rating: `;
         ageRate.innerText = `Age Rating: `;
         relDate.innerText = `Release Date: `;
@@ -89,7 +89,7 @@ reset.addEventListener('click', function() {
     title.innerText = `Title: `;
     year.innerText = `Year: `;
     type.innerText = `Type: `;
-    genre.innerText += `Genre: `;
+    genre.innerText = `Genre: `;
     rating.innerText = `Rating: `;
     ageRate.innerText = `Age Rating: `;
     relDate.innerText = `Release Date: `;
@@ -102,4 +102,5 @@ reset.addEventListener('click', function() {
     image.setAttribute('src', '#');
     plot.innerText = `Plot: `;
 })
+
 
