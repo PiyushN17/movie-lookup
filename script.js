@@ -1,5 +1,5 @@
-let input = document.getElementById('search')
-let btn = document.getElementById('searchBtn')
+let input = document.getElementById('search');
+let btn = document.getElementById('searchBtn');
 let error = document.getElementById('error');
 let title = document.getElementById('title');
 let year = document.getElementById('year');
@@ -16,6 +16,7 @@ let actors = document.getElementById('actors');
 let awards = document.getElementById('awards');
 let box = document.getElementById('box');
 let reset = document.getElementById('reset');
+let container = document.getElementById('container');
 
 btn.addEventListener('click', function() {
     if(input.value !== '') {
@@ -23,8 +24,7 @@ btn.addEventListener('click', function() {
         title.innerText = `Title: `;
         year.innerText = `Year: `;
         type.innerText = `Type: `;
-        genre.innerText = `Genre: `;
-        rating.innerText = `IMDB Rating: `;
+        rating.innerText = `Rating: `;
         ageRate.innerText = `Age Rating: `;
         relDate.innerText = `Release Date: `;
         runTime.innerText = `Runtime: `;
@@ -46,6 +46,7 @@ btn.addEventListener('click', function() {
         })
         .then((value) => {
             if(value.Response === 'True') {
+                container.hidden = false;
                 title.innerText += ` ${value.Title}`;
                 year.innerText += ` ${value.Year}`;
                 type.innerText += ` ${value.Type}`;
@@ -83,11 +84,11 @@ btn.addEventListener('click', function() {
 
 reset.addEventListener('click', function() {
     reset.disabled = true;
+    container.hidden = true;
     title.innerText = `Title: `;
     year.innerText = `Year: `;
     type.innerText = `Type: `;
-    genre.innerText = `Genre: `;
-    rating.innerText = `IMDB Rating: `;
+    rating.innerText = `Rating: `;
     ageRate.innerText = `Age Rating: `;
     relDate.innerText = `Release Date: `;
     runTime.innerText = `Runtime: `;
@@ -98,8 +99,4 @@ reset.addEventListener('click', function() {
     image.hidden = true;
     image.setAttribute('src', '#');
     plot.innerText = `Plot: `;
-
 })
-
-
-
