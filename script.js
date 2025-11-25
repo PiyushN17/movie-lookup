@@ -36,7 +36,7 @@ btn.addEventListener('click', function() {
         image.setAttribute('src', '#');
         plot.innerText = `Plot: `;
         const query = input.value.trim();
-        const API_URL = `https://www.omdbapi.com/?t=${query}&apikey=b53fa51f`;
+        const API_URL = `https://www.omdbapi.com/?t=${query}&plot=full&apikey=b53fa51f`;
         const output = fetch(API_URL);
         error.innerText = '';
         input.value = '';
@@ -100,5 +100,6 @@ reset.addEventListener('click', function() {
     plot.innerText = `Plot: `;
 
 })
+
 
 
