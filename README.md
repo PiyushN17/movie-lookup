@@ -20,15 +20,15 @@ Reset Functionality: Reset the displayed information to its default state with a
 
 Responsive Design: The layout adjusts to different screen sizes, ensuring a user-friendly experience on both desktops and mobile devices.
 
-Technologies Used
+**Technologies Used**
 
-HTML5: Provides the structure and content of the webpage.
+ - HTML5: Provides the structure and content of the webpage.
 
-CSS3: Responsible for styling and layout design, with a focus on responsiveness.
+ - CSS3: Responsible for styling and layout design, with a focus on responsiveness.
 
-JavaScript: Adds interactivity, including API calls to the OMDb API, search functionality, and dynamic content updates.
+ - JavaScript: Adds interactivity, including API calls to the OMDb API, search functionality, and dynamic content updates.
 
-How to Use
+**How to Use**
 
 Search for a Movie or TV Show:
 
@@ -42,8 +42,8 @@ Error Handling:
 
 If no results are found or the input is empty, an error message will appear.
 
-Example:
-
+**Example:
+**
 Search: "Inception"
 
 Results:
@@ -60,19 +60,18 @@ Rating: 8.8
 
 Plot: A skilled thief is given a chance to have his criminal record erased if he can successfully perform inception: planting an idea in a target’s subconscious.
 
-Installation
+**Installation**
 
 Clone the repository or download the project files:
 
 git clone https://github.com/yourusername/movie-lookup.git
 
-
 Open the index.html file in your browser to run the application locally.
 
-Contributions
-
+**Contributions
+**
 Contributions are welcome! Feel free to fork the repository, submit issues, or create pull requests to improve the project.
 
-API
+**API**
 
-This application uses data provided by the OMDb API. You can find more information about the API from https://www.omdbapi.com/
+ - This application uses data provided by the OMDb API. You can find more information about the API from https://www.omdbapi.com/
