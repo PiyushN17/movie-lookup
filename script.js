@@ -58,7 +58,6 @@ btn.addEventListener('click', function() {
                 dir.innerText += ` ${value.Director}`;
                 actors.innerText += ` ${value.Actors}`;
                 awards.innerText += ` ${value.Awards}`;
-                box.innerText += ` ${value.BoxOffice}`;
                 image.hidden = false;
                 if(value.Poster !== 'N/A') {
                     image.setAttribute('src', value.Poster);
@@ -101,6 +100,7 @@ reset.addEventListener('click', function() {
     image.setAttribute('src', '#');
     plot.innerText = `Plot: `;
 })
+
 
 
 
