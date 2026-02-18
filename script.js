@@ -14,7 +14,6 @@ let runTime = document.getElementById('runtime');
 let dir = document.getElementById('Director');
 let actors = document.getElementById('actors');
 let awards = document.getElementById('awards');
-let box = document.getElementById('box');
 let reset = document.getElementById('reset');
 let container = document.getElementById('container');
 
@@ -102,5 +101,6 @@ reset.addEventListener('click', function() {
     image.setAttribute('src', '#');
     plot.innerText = `Plot: `;
 })
+
 
 
