@@ -30,7 +30,6 @@ btn.addEventListener('click', function() {
         dir.innerText = `Director: `;
         actors.innerText = `Actors: `;
         awards.innerText = `Awards: `;
-        box.innerText = `Box Office: `;
         image.hidden = true;
         image.setAttribute('src', '#');
         plot.innerText = `Plot: `;
@@ -100,6 +99,7 @@ reset.addEventListener('click', function() {
     image.setAttribute('src', '#');
     plot.innerText = `Plot: `;
 })
+
 
 
 
